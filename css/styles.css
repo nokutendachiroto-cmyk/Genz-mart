@@ -1,0 +1,67 @@
+:root {
+    --accent: #1e4c34;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+h1,
+h2 .logo {
+    font-family: "Playfair Display";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color : pink;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    border-bottom: 1px solid plum;
+}
+
+.top-bar {
+    background-color: var(--accent);
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(160, 221, 193);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    margin: 0 auto;
+}
+.nav-links {
+    display: none;
+    gap: 1.5rem;
+}
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        gap: 2.5rem;
+    }
+}
